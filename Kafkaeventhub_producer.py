@@ -9,12 +9,12 @@ import uuid
 import random
 
 conf = {
-    'bootstrap.servers': 'eventhubpruebaehdb.servicebus.windows.net:9093',
+    'bootstrap.servers': '[TU_EVENT_HUB].servicebus.windows.net:9093',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanism': 'PLAIN',
     'sasl.username': '$ConnectionString',
     'ssl.ca.location': 'cacert.pem',  
-    'sasl.password': 'Endpoint=sb://eventhubpruebaehdb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=vkz9DWvITgh5otmO5s+YEIUtEz7l2HTas+AEhN31Cfs=',
+    'sasl.password': '[TU_CADENA_DE_CONEXION_EVENT_HUB]',
     'client.id': 'python-example-producer'
 }
 
